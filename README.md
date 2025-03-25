@@ -4,7 +4,7 @@
 
 ![Python](https://img.shields.io/badge/python-3.9%2B-blue)
 ![Flask](https://img.shields.io/badge/flask-2.3.2-lightgrey)
-![Ollama](https://img.shields.io/badge/ollama-llama2-orange)
+![Ollama](https://img.shields.io/badge/ollama-llama3.2-orange)
 
 Newsify is an intelligent news aggregation and summarization tool that delivers concise, categorized news digests for competitive exam preparation and quick news consumption.
 
@@ -14,7 +14,7 @@ Newsify is an intelligent news aggregation and summarization tool that delivers 
 - **Smart categorization**: General, Politics, Technology, Sports
 - **AI-powered summaries**: Clean, line-separated summaries
 - **Exam-focused**: Generates revision questions from news
-- **Self-hosted AI**: Runs locally with Ollama/Llama2
+- **Self-hosted AI**: Runs locally with Ollama/Llama3.2
 
 ## Tech Stack 🛠️
 
@@ -31,7 +31,7 @@ Newsify is an intelligent news aggregation and summarization tool that delivers 
 1. Install dependencies:
 ```bash
 pip install -r requirements.txt
-ollama pull llama2
+ollama pull llama3.2
 ollama serve
 python app.py
 ```
