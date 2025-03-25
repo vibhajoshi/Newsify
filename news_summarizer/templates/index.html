@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>News Summarizer</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f7fa;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .app-title {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 2.2em;
+            margin: 30px 0 10px 0;
+            font-weight: 700;
+        }
+        .app-subtitle {
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 1.1em;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+        .form-container { 
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        select, button { 
+            width: 100%; 
+            padding: 14px; 
+            margin: 8px 0; 
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+        select {
+            background-color: #f8f9fa;
+        }
+        button {
+            background-color: #4285f4;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #3367d6;
+        }
+        label { 
+            display: block; 
+            margin-top: 20px; 
+            font-weight: 500;
+            color: #2c3e50;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="app-title">Newsify</div>
+    <div class="app-subtitle">Summarizing the World for You</div>
+    
+    <div class="form-container">
+        <form method="POST">
+            <label for="region">Select Region:</label>
+            <select id="region" name="region" required>
+                <option value="india">India</option>
+                <option value="international">International</option>
+            </select>
+            
+            <label for="category">Select Category:</label>
+            <select id="category" name="category" required>
+                <option value="general">General</option>
+                <option value="politics">Politics</option>
+                <option value="technology">Technology</option>
+                <option value="sports">Sports</option>
+            </select>
+            
+            <button type="submit">Get News Summary</button>
+        </form>
+    </div>
+</body>
+</html>
